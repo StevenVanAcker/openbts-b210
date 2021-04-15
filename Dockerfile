@@ -1,5 +1,5 @@
 ARG UBUNTU_VERSION=16.04
-FROM i386/ubuntu:${UBUNTU_VERSION}
+FROM ubuntu:${UBUNTU_VERSION}
 
 COPY install-openbts-from-source.sh /opt/install-openbts-from-source.sh
 RUN chmod +x /opt/install-openbts-from-source.sh

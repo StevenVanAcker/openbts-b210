@@ -1,3 +1,5 @@
 Installation script for OpenBTS with Ettus USRP B210
 
-Tested with Ubuntu 16.04 in docker
+Tested with base docker containers:
+	ubuntu:16.04
+	i386/ubuntu:16.04
