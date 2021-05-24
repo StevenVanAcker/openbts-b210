@@ -7,6 +7,8 @@ update CONFIG set VALUESTRING="NinjaTelCo" where KEYSTRING="GSM.Identity.ShortNa
 update CONFIG set VALUESTRING="10" where KEYSTRING="GSM.Radio.RxGain";
 update CONFIG set VALUESTRING="^90170" where KEYSTRING="Control.LUR.OpenRegistration";
 update CONFIG set VALUESTRING="0" where KEYSTRING="GSM.Radio.PowerManager.MaxAttenDB";
+update CONFIG set VALUESTRING="1" where KEYSTRING="GPRS.Enable";
+update CONFIG set VALUESTRING="0" where KEYSTRING="GGSN.Firewall.Enable";
 EOF
 
 cd /OpenBTS

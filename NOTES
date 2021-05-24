@@ -1,11 +1,13 @@
 - phones need to be configured for 2G only!
 - Tested with 4 phones:
-	- Samsung Galaxy S9 (SM-960F): works
+	- Samsung Galaxy S9 (SM-960F): voice and SMS work
 	- iPhone SE (software version 14.4.1): doesn't work (doesn't have 2G)
-	- Motorola Moto G (XT1068): works
-	- Samsung Galaxy S III Mini (GT-i8190): works
+	- Motorola Moto G (XT1068): voice, SMS and GPRS work
+	- Samsung Galaxy S III Mini (GT-i8190): voice and SMS work
 - useful commands:
 	- chans -- to show radio channels
 	- tmsis -- to show registered TMSIs/IMSIs
 - take phones into flight mode and back out to try reconnecting
 - 10 registered SIM cards with phone numbers resembling IMSIs: 510 to 519
+- May need to configure sgsntun with IP 192.168.99.100 or so?
+
