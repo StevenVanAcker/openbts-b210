@@ -1,5 +1,5 @@
-UBUNTU_VERSION := 16.04
-cn := openbts-b210
+UBUNTU_VERSION := 22.04
+cn := openbts-b210-2204
 
 build:
 	docker build --build-arg UBUNTU_VERSION=$(UBUNTU_VERSION) -t $(cn) .

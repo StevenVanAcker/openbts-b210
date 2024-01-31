@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 sqlite3 /etc/OpenBTS/OpenBTS.db <<EOF
 update CONFIG set VALUESTRING="901" where KEYSTRING="GSM.Identity.MCC";
@@ -11,15 +11,14 @@ update CONFIG set VALUESTRING="1" where KEYSTRING="GPRS.Enable";
 update CONFIG set VALUESTRING="0" where KEYSTRING="GGSN.Firewall.Enable";
 EOF
 
-cd /OpenBTS
-./sipauthserve &
+sipauthserve &
 
 for i in `seq 510 519`; 
 do 
-	/opt/openbts-dev/NodeManager/nmcli.py sipauthserve subscribers create ue$i IMSI901700000038$i $i; 
+	/opt/OpenBTS/NodeManager/nmcli.py sipauthserve subscribers create ue$i IMSI901700000038$i $i; 
 done
 
-chown asterisk: /var/lib/asterisk/sqlite3dir/*
+# chown asterisk: /var/lib/asterisk/sqlite3dir/*
 
 cat > /etc/odbcinst.ini <<EOF
 [SQLite]

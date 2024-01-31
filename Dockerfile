@@ -1,5 +1,7 @@
-ARG UBUNTU_VERSION=16.04
+ARG UBUNTU_VERSION=22.04
 FROM ubuntu:${UBUNTU_VERSION}
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 COPY install-openbts-from-source.sh /opt/install-openbts-from-source.sh
 RUN chmod +x /opt/install-openbts-from-source.sh
