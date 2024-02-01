@@ -4,7 +4,7 @@ echo "Installing from source"
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get -y update
-apt-get -y install git vim sudo tzdata
+apt-get -y install git vim sudo tzdata iptables iproute2 net-tools tcpdump
 
 mkdir -p /opt/
 cd /opt/

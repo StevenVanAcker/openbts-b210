@@ -7,7 +7,17 @@
 - useful commands:
 	- chans -- to show radio channels
 	- tmsis -- to show registered TMSIs/IMSIs
+	- config GPRS.Enable 1 -- to enable GPRS (the docker container does this automatically)
+	- gprs list
+	- sgsn list -- to check IP address
 - take phones into flight mode and back out to try reconnecting
 - 10 registered SIM cards with phone numbers resembling IMSIs: 510 to 519
 - May need to configure sgsntun with IP 192.168.99.100 or so?
+
+
+
+- make sure to connect with 2G (check mmcli)
+- when connecting to the APN, provide an APN name, username and password, even if all of them are random
+- it can take several minutes before you get an IP!
+
 
