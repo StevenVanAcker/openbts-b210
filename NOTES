@@ -21,3 +21,6 @@
 - it can take several minutes before you get an IP!
 
 
+
+- "ALERT 18788:18807 2016-01-06T18:09:41.3 Transceiver.cpp:414:pullRadioVector: Clipping detected on RACH input"
+	This means you need to lower the RxGain, either in default-config.sh, or using the devconfig or rxgain command
